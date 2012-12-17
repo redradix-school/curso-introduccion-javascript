@@ -28,6 +28,26 @@ function apostar (cantidad) {
 // Tirar los dados
 
 function jugar () {
+  function tirada () {
+    return 1 + Math.floor(Math.random() * 6);
+  }
+  var dado1 = tirada();
+  var dado2 = tirada();
+  
+  console.log("[ " + dado1 + " ] [ " + dado2 + " ]");
+  
+  if (dado1 + dado2 == 7) {
+    dinero = dinero + apuesta*10;
+    console.log("Has ganado!");
+    estado();
+  } else if (dado1 == dado2) {
+    console.log("Vuelve a jugar!");
+    return jugar();
+  } else {
+    dinero = dinero - apuesta;
+    console.log("Has perdido!");
+    estado();
+  }
 }
 
 // Inicialización
