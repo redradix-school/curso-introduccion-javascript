@@ -1,0 +1,61 @@
+<html>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>js maquetadores - tema 6 - ej. 2</title>
+    <link rel="stylesheet" href="../../lib/stylesheets/foundation.min.css" type="text/css" media="screen" charset="utf-8">
+    <script src="../../lib/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="codigo.js" type="text/javascript" charset="utf-8"></script>
+
+    <style type="text/css" media="screen">
+      .orbit-wrapper {
+        overflow: hidden;
+      }
+      .orbit-wrapper .orbit {
+        white-space: nowrap;
+        overflow: visible;
+      }
+      .orbit-wrapper .orbit img {
+        position: static;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div class="row">
+
+        <div class="ten columns offset-by-one">
+
+          <div class="orbit-wrapper" style="width: inherit; height: inherit;">
+            <div id="featured" class="orbit" id="fotos" style="width: inherit; height: inherit;">
+              <div>
+                <img src="img/orbit1.jpg" class="orbit-slide" style=""><img src="img/orbit2.jpg" class="orbit-slide" style=""><img src="img/orbit3.jpg" class="orbit-slide" style="">
+              </div>
+            </div>
+            <div class="slider-nav hide-for-small">
+              <span class="right" id="derecha"> Derecha </span>
+              <span class="left" id="izquierda"> Izquierda </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="four rows offset-by-four">
+          <ul class="button-group radius even three-up" id="botones">
+            <li><a href="#" class="button radius">1</a></li>
+            <li><a href="#" class="button radius">2</a></li>
+            <li><a href="#" class="button radius">3</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html>
