@@ -15,7 +15,7 @@ $(function() {
   // Para viajar a la posición que quiero ver
   
   function moverAPosicion () {
-    posicion = posicion % numeroFotos;
+    posicion = Math.abs(posicion % numeroFotos);
     fotos.stop().animate({left: -100 * posicion + "%"});
   }
 
@@ -43,5 +43,17 @@ $(function() {
   for (var i=0; i<botones.length; i++) {
     botonIrAFoto(botones[i], i);
   }
+  
+  // Movimiento automático
+  
+  function autoPase () {
+    setTimeout(function () {
+      posicion++;
+      moverAPosicion();
+      autoPase();
+    }, 2000);
+  }
+  
+  autoPase();
 
 });
