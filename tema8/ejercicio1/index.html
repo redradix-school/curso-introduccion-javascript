@@ -1,0 +1,50 @@
+<html>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>js maquetadores - tema 8 - ej. 1</title>
+    <link rel="stylesheet" href="../../lib/stylesheets/foundation.min.css" type="text/css" media="screen" charset="utf-8">
+    <script src="../../lib/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/solipsist.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/service.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="codigo.js" type="text/javascript" charset="utf-8"></script>
+
+    <style type="text/css" media="screen">
+      .air { margin-top: 20px; }
+      dt { font-family: monospace; font-weight: bold; }
+      dd { margin-bottom: 10px; }
+    </style>
+
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div class="air">
+      </div>
+
+      <div class="row">
+        <div class="eight columns offset-by-two">
+          <h1>Experimenta haciendo llamadas AJAX</h1>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="eight columns offset-by-two">
+          <dl>
+            <dt> GET: /users </dt>
+            <dd> Listado de todos los usuarios <pre> {nombre: "nombre", id: #} </pre> </dd>
+            <dt> GET: /users/:id </dt>
+            <dd> Detalles del usuario con id :id </dd>
+            <dt> POST: /users/:id </dt>
+            <dd> Modificar los datos del usuario con id :id </dd>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html>
