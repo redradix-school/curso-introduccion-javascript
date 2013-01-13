@@ -1,0 +1,70 @@
+<html>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>js maquetadores - tema 7 - ej. 4</title>
+    <link rel="stylesheet" href="../../lib/stylesheets/foundation.min.css" type="text/css" media="screen" charset="utf-8">
+    <script src="../../lib/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="codigo.js" type="text/javascript" charset="utf-8"></script>
+
+    <style type="text/css" media="screen">
+      .air { margin-top: 100px; }
+      input { padding: 18px 10px; }
+      .cerrar { font-size: 24px !important; }
+      div.alert-box { padding: 10px; }
+    </style>
+
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div class="air">
+      </div>
+
+      <div class="row">
+        <div class="eight columns offset-by-two">
+          <h2>Tareas</h2>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="lista" class="eight columns offset-by-two">
+
+          <!-- Utiliza el contendio de #template como plantilla -->
+
+          <div id="template" style="display:none">
+            <div class="alert-box secondary">
+              <span class="tarea"> Texto de la tarea </span>
+              <a href="#" class="close cerrar">&times;</a>
+            </div>
+          </div>
+
+          <!-- Aquí van las tareas -->
+
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+
+        <div class="six columns offset-by-two">
+          <input type="text">
+          <small class="error" style="display:none"> No puede estar vacío </small>
+        </div>
+
+        <div class="two columns end">
+
+          <a id="anadir" class="button success twelve columns radius" href="#"> Añadir </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+
+</html>

@@ -7,7 +7,6 @@ $(function () {
     var cabecera = $(linea).find("h4");
 
     $(linea).find(".dime-algo").click(function (e) {
-      alert("jarl")
       cabecera.html(mensajes[posicion]);
       posicion = posicion + 1;
       if (posicion >= mensajes.length) {
@@ -16,15 +15,23 @@ $(function () {
     });
 
     $(linea).find(".aumentar").click(function (e) {
+      cabecera.css({"font-size": ++tamano + "px"});
     });
 
     $(linea).find(".reducir").click(function (e) {
+      cabecera.css({"font-size": --tamano + "px"});
     });
 
     $(linea).find(".ocultar").click(function (e) {
+      cabecera.css({display: "none"});
+      $(linea).find(".mostrar").css({display: "block"});
+      $(linea).find(".ocultar").css({display: "none"});
     });
 
     $(linea).find(".mostrar").click(function (e) {
+      cabecera.css({display: "block"});
+      $(linea).find(".mostrar").css({display: "none"});
+      $(linea).find(".ocultar").css({display: "block"});
     });
 
   }
