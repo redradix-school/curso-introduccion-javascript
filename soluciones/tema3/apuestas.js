@@ -40,6 +40,7 @@ function jugar () {
     dinero = dinero + apuesta*10;
     console.log("Has ganado!");
     estado();
+    comprobarVictoria();
   } else if (dado1 == dado2) {
     console.log("Vuelve a jugar!");
     return jugar();
@@ -47,6 +48,21 @@ function jugar () {
     dinero = dinero - apuesta;
     console.log("Has perdido!");
     estado();
+    comprobarDerrota();
+  }
+}
+
+function comprobarDerrota() {
+  if (dinero <= 0) {
+    console.log("Has perdido!!!");
+    reset();
+  }
+}
+
+function comprobarVictoria() {
+  if (dinero > 100000) {
+    console.log("Te puedes retirar!");
+    reset();
   }
 }
 
