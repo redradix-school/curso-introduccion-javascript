@@ -19,8 +19,8 @@ function nombreMenor(listaUsuarios) {
 }
 
 function ordenarPorNombre(listaUsuarios) {
-  var nuevaLista = [],
-      siguiente;
+  var nuevaLista = [];
+  var siguiente;
   while (listaUsuarios.length > 0) {
     siguiente = nombreMenor(listaUsaurios);
     nuevaLista.push(siguiente);
